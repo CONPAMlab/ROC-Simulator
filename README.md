@@ -3,7 +3,7 @@ Simulating and visualizing ROC models
 
 ## Installation
 - Download the repository   
-- run the .mlappinstall file in the "ROC_Simulator" folder by double-clicking on the file in Matlab.  
+- Run the .mlappinstall file in the "ROC_Simulator" folder by double-clicking on the file in Matlab.  
 - After the installation, click on the "Apps" label in Matlab. The "ROC Simulator" should be in the drop-down menu.
 
 ## Start the ROC Simulator  
