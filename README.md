@@ -8,7 +8,7 @@ Simulating and visualizing ROC models
 
 ## Start the ROC Simulator  
 
-- When the current directory of Matlab contains the file "ROC_Simulator.mlapp", double-click on it.
+- When the current directory of Matlab contains the file "ROC_Simulator.mlapp", double-click on it or type "ROC_Simulator" in the command line.
 - When the current directory of Matlab is __not__ the directory of "ROC_Simulator.mlapp", click on the app label in the drop-down menu under the "Apps" option in Matlab.
 
 ## About
