@@ -1,8 +1,8 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1546559936" file="/Users/tianyema/Matlab/ROC_Simulator/ROC Simulator.prj" location="/Users/tianyema/Matlab/ROC_Simulator" name="ROC Simulator" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2442001216" file="/home/tianye/Matlab_WS/ROC/ROC_Simulator/ROC Simulator.prj" location="/home/tianye/Matlab_WS/ROC/ROC_Simulator" name="ROC Simulator" target="target.mlapps" target-name="Package App">
     <param.appname>ROC Simulator</param.appname>
-    <param.authnamewatermark>Tianye Ma</param.authnamewatermark>
-    <param.email>mack.ma@email.ucr.edu</param.email>
+    <param.authnamewatermark>Tianye Ma, Weiwei Zhang</param.authnamewatermark>
+    <param.email>tma039@ucr.edu</param.email>
     <param.company>University of California, Riverside</param.company>
     <param.icon>${PROJECT_ROOT}/ROC Simulator_resources/icon_24.png</param.icon>
     <param.icons>
@@ -12,14 +12,14 @@
     </param.icons>
     <param.summary>Simulating and visualizing ROCs and zROCs.</param.summary>
     <param.description>Simulating and visualizing ROCs and zROCs. 
-Developed at Riverside with Dr. Weiwei Zhang.</param.description>
-    <param.screenshot>/Users/tianyema/Downloads/ROC_Simulator-main/ROC_icon.png</param.screenshot>
+Developed at Riverside by Tianye Ma and Weiwei Zhang</param.description>
+    <param.screenshot>${PROJECT_ROOT}/ROC_screeshot.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
-    <param.output>/Users/tianyema/Matlab/ROC_Simulator</param.output>
+    <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>84e9c53f-7e83-4987-858b-e2d316baec4b</param.guid>
     <unset>
       <param.version />
@@ -45,14 +45,15 @@ Developed at Riverside with Dr. Weiwei Zhang.</param.description>
     <fileset.resources />
     <fileset.package />
     <build-deliverables>
-      <file location="/Users/tianyema/Matlab" name="ROC_Simulator" optional="false">/Users/tianyema/Matlab/ROC_Simulator</file>
+      <file location="/home/tianye/Matlab_WS/ROC" name="ROC_Simulator" optional="false">/home/tianye/Matlab_WS/ROC/ROC_Simulator</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>/Applications/MATLAB_R2018b.app</root>
+      <root>/usr/local/MATLAB/R2020b</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
         <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
         <toolbox name="fixedpoint" />
         <toolbox name="matlabhdlcoder" />
         <toolbox name="neuralnetwork" />
@@ -66,6 +67,11 @@ Developed at Riverside with Dr. Weiwei Zhang.</param.description>
         <embeddedcoder>
           <enabled>true</enabled>
         </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
       </toolbox>
       <toolbox>
         <fixedpoint>
@@ -85,17 +91,17 @@ Developed at Riverside with Dr. Weiwei Zhang.</param.description>
     </matlab>
     <platform>
       <unix>true</unix>
-      <mac>true</mac>
+      <mac>false</mac>
       <windows>false</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
-      <linux>false</linux>
+      <linux>true</linux>
       <solaris>false</solaris>
-      <osver>10.16</osver>
+      <osver>5.15.0-78-generic</osver>
       <os32>false</os32>
       <os64>true</os64>
-      <arch>maci64</arch>
+      <arch>glnxa64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>
